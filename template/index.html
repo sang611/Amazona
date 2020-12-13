@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Amazona</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="brand">
+                <button onclick="openSidebar()" class="sidebar-btn">&#9776;</button>
+                <a href="#">Amazona</a>
+            </div>
+            <div class="header-links">
+                <a href="">Sign in</a>
+                <a href="">Cart</a>
+            </div>
+        </header>
+        <aside class="sidebar"><br>
+            <center>
+                <h3>Shopping Categories</h3>
+            </center>
+            
+            <ul>
+                <li><a href="">Shirts</a></li>
+                <li><a href="">Pants</a></li>
+            </ul>
+            
+        </aside>
+        <main class="main">
+            <div class="content">
+                <ul class="products">
+                    
+                    <li>
+                        <div class="single-product">
+                            <img class="product-img" src="https://gentwith.com/wp-content/uploads/2018/12/Slim-Fit-chain-collar-shirt-white.jpeg" alt="No img">
+                            <div class="product-name">
+                               <a href="#">Slim Shirt</a>
+                            </div>
+                            <div class="product-brand">
+                                Nike
+                            </div>
+                            <div class="product-price">
+                                $60
+                            </div>
+                            <div class="product-rating">
+                                5 stars
+                            </div>
+                        </div>
+                    
+                    </li>
+                    <li>
+                        <div class="single-product">
+                            <img class="product-img" src="https://www.fabindia.com/ccstore/v1/images/?source=/file/v3087248133027246453/products/10581335WH.f.24012019.jpg" alt="No img">
+                            <div class="product-name">
+                               <a href="#">Slim Shirt</a>
+                            </div>
+                            <div class="product-brand">
+                                Nike
+                            </div>
+                            <div class="product-price">
+                                $60
+                            </div>
+                            <div class="product-rating">
+                                5 stars
+                            </div>
+                        </div>
+                    
+                    </li>
+                    <li>
+                        <div class="single-product">
+                            <img class="product-img" src="https://gentwith.com/wp-content/uploads/2018/12/Slim-Fit-chain-collar-shirt-white.jpeg" alt="No img">
+                            <div class="product-name">
+                               <a href="#">Slim Shirt</a>
+                            </div>
+                            <div class="product-brand">
+                                Nike
+                            </div>
+                            <div class="product-price">
+                                $60
+                            </div>
+                            <div class="product-rating">
+                                5 stars
+                            </div>
+                        </div>
+                    
+                    </li>
+                    <li>
+                        <div class="single-product">
+                            <img class="product-img" src="https://www.fabindia.com/ccstore/v1/images/?source=/file/v3087248133027246453/products/10581335WH.f.24012019.jpg" alt="No img">
+                            <div class="product-name">
+                               <a href="#">Slim Shirt</a>
+                            </div>
+                            <div class="product-brand">
+                                Nike
+                            </div>
+                            <div class="product-price">
+                                $60
+                            </div>
+                            <div class="product-rating">
+                                5 stars
+                            </div>
+                        </div>
+                    
+                    </li>
+                    <li>
+                        <div class="single-product">
+                            <img class="product-img" src="https://gentwith.com/wp-content/uploads/2018/12/Slim-Fit-chain-collar-shirt-white.jpeg" alt="No img">
+                            <div class="product-name">
+                               <a href="#">Slim Shirt</a>
+                            </div>
+                            <div class="product-brand">
+                                Nike
+                            </div>
+                            <div class="product-price">
+                                $60
+                            </div>
+                            <div class="product-rating">
+                                5 stars
+                            </div>
+                        </div>
+                    
+                    </li>
+                    <li>
+                        <div class="single-product">
+                            <img class="product-img" src="https://www.fabindia.com/ccstore/v1/images/?source=/file/v3087248133027246453/products/10581335WH.f.24012019.jpg" alt="No img">
+                            <div class="product-name">
+                               <a href="#">Slim Shirt</a>
+                            </div>
+                            <div class="product-brand">
+                                Nike
+                            </div>
+                            <div class="product-price">
+                                $60
+                            </div>
+                            <div class="product-rating">
+                                5 stars
+                            </div>
+                        </div>
+                    
+                    </li>
+                </ul>
+            </div>
+            
+        </main>
+        <footer class="footer">
+            All right reserved
+        </footer>
+    </div>
+    
+</body>
+<script>
+    var isDisplaySidebar = false;
+    function openSidebar() {
+        let sidebar = document.querySelector('.sidebar');
+        let sidebarBtn = document.querySelector('.sidebar-btn')
+        if(!isDisplaySidebar)
+            {
+                sidebar.classList.add('open');
+                sidebarBtn.classList.add('sidebar-open');
+                isDisplaySidebar = true;
+            }
+        else {
+                sidebar.classList.remove('open');
+                sidebarBtn.classList.remove('sidebar-open');
+                isDisplaySidebar = false;
+        }
+    }
+</script>
+</html>
